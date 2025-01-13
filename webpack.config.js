@@ -14,7 +14,7 @@ module.exports = {
     static: outputPath,
   },
   entry: {
-    main: ['webpack-hot-middleware/client', './client/index.js'],
+    main: ['webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true', './client/index.js'],
   },
   output: {
     path: outputPath,
